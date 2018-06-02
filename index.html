@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystals Collector</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+
+<body>
+
+<h1>Crystals Collector</h1><br>
+
+<div id="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Instructions</h2><br>
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+			<p>You win the game by matching your total score to the random number. You lost the game if your total score goes above the random number.</p>
+			<p>You win the game by matching your total score to the random number. You lost the game if your total score goes above the random number.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+      <div class="col-sm-9">
+        <h2>Score to match: <span id="scoreToMatch">80</span></h2>
+      </div>
+      <div class="col-sm-3">
+        <h3>Wins: <span id="wins"></span></h3>
+        <h3 class="text-left">Losses: <span id="losses"></span></h3>
+      </div>
+    </div>
+</div>
+
+<div id="container">
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-9">
+			<button class="pointer" id="blueRandom"><img src="assets/images/blue-crystal.jpg" alt="blue-crystal" width="150px" height="150px"></button>
+			<button class="pointer" id="greenRandom"><img src="assets/images/green-crystal.jpg" alt="green-crystal" width="150px" height="150px"></button>
+			<button class="pointer" id="redRandom"><img src="assets/images/red-crystal.jpg" alt="red-crystal" width="150px" height="150px"></button>
+			<button class="pointer" id="yellowRandom"><img src="assets/images/yellow-crystal.jpg" alt="yellow-crystal" width="150px" height="150px"></button>
+		</div>
+	</div>
+</div>
+
+<br><br>
+
+<div id="container">
+	<div class="row">
+		<div class="col-sm-10">
+			<h2>Your total score is: <span id="totalScore"></span></h2>
+		</div>
+	</div>
+
+</div>
+
+
+
+<script>
+randomScore();
+</script>
+
+</body>
+
+</html>
